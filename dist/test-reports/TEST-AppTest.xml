@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Macs-MBP" name="AppTest" skipped="0" tests="1" time="0.023" timestamp="2024-07-10T12:17:38">
+  <properties>
+    <property name="ant.library.dir" value="/opt/homebrew/Cellar/ant/1.10.14/libexec/lib" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.specification.version" value="22" />
+    <property name="ant.project.name" value="devops_repo" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.class.path" value="/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-launcher.jar:/opt/homebrew/share/ant:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-commons-net.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-xz.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-junit4.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/bcel-6.7.0.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-jai.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-apache-resolver.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-jdepend.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-apache-regexp.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-apache-log4j.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-javamail.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-apache-bcel.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-netrexx.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-swing.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-jsch.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-junitlauncher.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ivy-2.5.1.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-jakartamail.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-junit.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-imageio.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-launcher.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-antlr.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-testutil.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-apache-oro.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-jmf.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-apache-xalan2.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-apache-bsf.jar:/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant-commons-logging.jar" />
+    <property name="java.vm.vendor" value="Homebrew" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues" />
+    <property name="java.vm.specification.version" value="22" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="user.country" value="AU" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/lib" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  -lib /opt/homebrew/share/ant package" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="jdk.debug" value="release" />
+    <property name="test.dir" value="build/test-reports" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="/Users/mac" />
+    <property name="user.language" value="en" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.version.date" value="2024-04-16" />
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home" />
+    <property name="basedir" value="/Users/mac/Documents/GitHub/devops_repo" />
+    <property name="file.separator" value="/" />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="ant.file.type.devops_repo" value="file" />
+    <property name="ant.java.version" value="22" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="apple.awt.application.name" value="Launcher" />
+    <property name="package.file" value="devops_repo.tar.gz" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.runtime.version" value="22.0.1" />
+    <property name="user.name" value="mac" />
+    <property name="ant.file" value="/Users/mac/Documents/GitHub/devops_repo/build.xml" />
+    <property name="stdout.encoding" value="UTF-8" />
+    <property name="path.separator" value=":" />
+    <property name="os.version" value="14.5" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="ant.project.invoked-targets" value="package" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="java.vendor.version" value="Homebrew" />
+    <property name="dist.dir" value="dist" />
+    <property name="build.dir" value="build" />
+    <property name="ant.core.lib" value="/opt/homebrew/Cellar/ant/1.10.14/libexec/lib/ant.jar" />
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues" />
+    <property name="java.io.tmpdir" value="/var/folders/9x/bhgcjz2x7vx2p864bwyp26000000gn/T/" />
+    <property name="java.version" value="22.0.1" />
+    <property name="user.dir" value="/Users/mac/Documents/GitHub/devops_repo" />
+    <property name="os.arch" value="aarch64" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.home" value="/opt/homebrew/Cellar/ant/1.10.14/libexec" />
+    <property name="lib.dir" value="lib" />
+    <property name="native.encoding" value="UTF-8" />
+    <property name="ant.file.devops_repo" value="/Users/mac/Documents/GitHub/devops_repo/build.xml" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.14 compiled on August 16 2023" />
+    <property name="java.library.path" value="/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor" value="Homebrew" />
+    <property name="stderr.encoding" value="UTF-8" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.vm.version" value="22.0.1" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.class.version" value="66.0" />
+    <property name="src.dir" value="src" />
+    <property name="ant.project.default-target" value="package" />
+  </properties>
+  <testcase classname="AppTest" name="testApp" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
