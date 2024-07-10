@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título Dinámico</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #232526, #414345);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+        h1, h2 {
+            margin: 0.5em 0;
+        }
+        h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            animation: colorChangeTitle 5s infinite alternate;
+        }
+        h2 {
+            font-size: 2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: colorChangeSubtitle 5s infinite alternate;
+        }
+        @keyframes colorChangeTitle {
+            0% { color: #fff; }
+            50% { color: #b3b3b3; }
+            100% { color: #4a4a4a; }
+        }
+        @keyframes colorChangeSubtitle {
+            0% { color: #d4af37; }
+            50% { color: #b8860b; }
+            100% { color: #8b4513; }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Edgar Andres Delgado Castellano</h1>
+        <h2>DOT503 - DevOps Tools</h2>
+    </div>
+</body>
+</html>
