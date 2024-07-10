@@ -1,32 +1,39 @@
 <project name="devops_repo" default="package" basedir=".">
-    <!-- Definir las propiedades del proyecto -->
     <property name="src.dir" value="src"/>
     <property name="build.dir" value="build"/>
     <property name="dist.dir" value="dist"/>
     <property name="package.file" value="devops_repo.tar.gz"/>
+    <property name="test.dir" value="build/test-reports"/>
+    <property name="lib.dir" value="lib"/>
 
-    <!-- Limpiar el directorio de construcción -->
+    <path id="classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
     <target name="clean">
         <delete dir="${build.dir}"/>
         <delete dir="${dist.dir}"/>
         <delete file="${package.file}"/>
     </target>
 
-    <!-- Compilar el código fuente -->
     <target name="compile">
         <mkdir dir="${build.dir}"/>
-        <javac srcdir="${src.dir}" destdir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+            <classpath refid="classpath"/>
+        </javac>
     </target>
 
-    <!-- Ejecutar pruebas (suponiendo que usas JUnit) -->
-    <target name="test">
-        <mkdir dir="${build.dir}/test-reports"/>
+    <target name="test" depends="compile">
+        <mkdir dir="${test.dir}"/>
         <junit printsummary="yes" haltonfailure="yes">
             <classpath>
                 <path refid="classpath"/>
+                <pathelement path="${build.dir}"/>
             </classpath>
             <formatter type="xml"/>
-            <batchtest todir="${build.dir}/test-reports">
+            <batchtest todir="${test.dir}">
                 <fileset dir="${src.dir}">
                     <include name="**/*Test.java"/>
                 </fileset>
@@ -34,7 +41,6 @@
         </junit>
     </target>
 
-    <!-- Crear un paquete deployable -->
     <target name="package" depends="clean, compile, test">
         <mkdir dir="${dist.dir}"/>
         <copy todir="${dist.dir}">
