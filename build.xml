@@ -1,0 +1,45 @@
+<project name="devops_repo" default="package" basedir=".">
+    <!-- Definir las propiedades del proyecto -->
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="package.file" value="devops_repo.tar.gz"/>
+
+    <!-- Limpiar el directorio de construcción -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+        <delete file="${package.file}"/>
+    </target>
+
+    <!-- Compilar el código fuente -->
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}"/>
+    </target>
+
+    <!-- Ejecutar pruebas (suponiendo que usas JUnit) -->
+    <target name="test">
+        <mkdir dir="${build.dir}/test-reports"/>
+        <junit printsummary="yes" haltonfailure="yes">
+            <classpath>
+                <path refid="classpath"/>
+            </classpath>
+            <formatter type="xml"/>
+            <batchtest todir="${build.dir}/test-reports">
+                <fileset dir="${src.dir}">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <!-- Crear un paquete deployable -->
+    <target name="package" depends="clean, compile, test">
+        <mkdir dir="${dist.dir}"/>
+        <copy todir="${dist.dir}">
+            <fileset dir="${build.dir}"/>
+        </copy>
+        <tar destfile="${package.file}" basedir="${dist.dir}"/>
+    </target>
+</project>
